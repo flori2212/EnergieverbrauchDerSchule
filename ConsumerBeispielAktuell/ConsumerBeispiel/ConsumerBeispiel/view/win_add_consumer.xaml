@@ -1,0 +1,93 @@
+﻿<Window x:Class="win_add_consumer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ConsumerBeispiel"
+        mc:Ignorable="d"
+        Title="Verbraucher hinzufügen" Height="358" Width="517.333">
+    <Grid>
+        <StackPanel Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" >
+            <GroupBox Header="Eigenschaften" Margin="10" HorizontalAlignment="Center" DataContext="{Binding SelectedConsumer}">
+                <GroupBox.Resources>
+                    <Style TargetType="Label" BasedOn="{StaticResource {x:Type Label}}">
+                        <Setter Property="FontWeight" Value="Bold"/>
+                        <Setter Property="FontSize" Value="13"/>
+                    </Style>
+                    <Style TargetType="TextBlock" BasedOn="{StaticResource {x:Type TextBlock}}">
+                        <Setter Property="Margin" Value="10,0,0,0"/>
+                        <Setter Property="FontSize" Value="13"/>
+                    </Style>
+                    <Style TargetType="TextBox" BasedOn="{StaticResource {x:Type TextBox}}">
+                        <Setter Property="Margin" Value="10,0,0,0"/>
+                        <Setter Property="FontSize" Value="13"/>
+                    </Style>
+                    <Style TargetType="ComboBox" BasedOn="{StaticResource {x:Type ComboBox}}">
+                        <Setter Property="Margin" Value="10,0,0,0"/>
+                        <Setter Property="FontSize" Value="13"/>
+                    </Style>
+                </GroupBox.Resources>
+
+                <Grid  Margin="10,10,10,5">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="10"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="10"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+
+                        <RowDefinition Height="10"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="10"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+
+                        <RowDefinition Height="10"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+
+                        <RowDefinition Height="15"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+
+
+                    <Label FontSize="13" FontWeight="Bold">ID:</Label>
+                    <Label FontSize="13" FontWeight="Bold" Grid.Row="4">Ort:</Label>
+                    <Label FontSize="13" FontWeight="Bold" Grid.Row="6">Gerät:</Label>
+                    <Label FontSize="13" FontWeight="Bold" Grid.Row="2">Datenherkunft:</Label>
+                    <Label FontSize="13" FontWeight="Bold" Grid.Row="8">Zeitbereich:</Label>
+                    <Label FontSize="13" FontWeight="Bold" Grid.Row="10">Anzahl:</Label>
+
+                    <TextBlock Text="{Binding ID}" Grid.Column="1"></TextBlock>
+                    <ComboBox ItemsSource="{Binding AviableDataCollectors}" DisplayMemberPath="NamesAndGrade"  Grid.Column="1" Grid.Row="2"/>
+                    <ComboBox ItemsSource="{Binding AviableRooms}" DisplayMemberPath="RoomNumber"  Grid.Column="1" Grid.Row="4"/>
+
+                    <ComboBox ItemsSource="{Binding AviableDevices}"  DisplayMemberPath="NameAndPower"  Grid.Column="1" Grid.Row="6">
+                    </ComboBox>
+
+                    <ComboBox ItemsSource="{Binding AviableTimeAreas}" DisplayMemberPath="Name"  Grid.Column="1" Grid.Row="8"/>
+
+                    <TextBox x:Name="txt_count" Grid.Column="1" Grid.Row="10" Width="300"></TextBox>
+
+
+
+
+
+
+                </Grid>
+
+            </GroupBox>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="12" Grid.ColumnSpan="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="10">
+            <Button  FontSize="13" Padding="20,3">Löschen</Button>
+            <Button FontSize="13" Margin="15,0,0,0" Padding="20,3">Neu</Button>
+        </StackPanel>
+
+    </Grid>
+</Window>

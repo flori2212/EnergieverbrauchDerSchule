@@ -1,0 +1,43 @@
+C:\Users\flori\Downloads\ConsumerBeispiel (1)\ConsumerBeispiel\ConsumerBeispiel\bin\Debug\ConsumerBeispiel.exe.config
+C:\Users\flori\Downloads\ConsumerBeispiel (1)\ConsumerBeispiel\ConsumerBeispiel\bin\Debug\ConsumerBeispiel.exe
+C:\Users\flori\Downloads\ConsumerBeispiel (1)\ConsumerBeispiel\ConsumerBeispiel\bin\Debug\ConsumerBeispiel.pdb
+C:\Users\flori\Downloads\ConsumerBeispiel (1)\ConsumerBeispiel\ConsumerBeispiel\bin\Debug\ConsumerBeispiel.xml
+C:\Users\flori\Downloads\ConsumerBeispiel (1)\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\EnergieverbrauchDerSchule.vbprojAssemblyReference.cache
+C:\Users\flori\Downloads\ConsumerBeispiel (1)\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\MainWindow.g.vb
+C:\Users\flori\Downloads\ConsumerBeispiel (1)\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\Application.g.vb
+C:\Users\flori\Downloads\ConsumerBeispiel (1)\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\GeneratedInternalTypeHelper.g.vb
+C:\Users\flori\Downloads\ConsumerBeispiel (1)\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\ConsumerBeispiel_MarkupCompile.cache
+C:\Users\flori\Downloads\ConsumerBeispiel (1)\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\ConsumerBeispiel_MarkupCompile.lref
+C:\Users\flori\Downloads\ConsumerBeispiel (1)\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\MainWindow.baml
+C:\Users\flori\Downloads\ConsumerBeispiel (1)\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\ConsumerBeispiel.g.resources
+C:\Users\flori\Downloads\ConsumerBeispiel (1)\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\ConsumerBeispiel.Resources.resources
+C:\Users\flori\Downloads\ConsumerBeispiel (1)\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\EnergieverbrauchDerSchule.vbproj.GenerateResource.cache
+C:\Users\flori\Downloads\ConsumerBeispiel (1)\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\EnergieverbrauchDerSchule.vbproj.CoreCompileInputs.cache
+C:\Users\flori\Downloads\ConsumerBeispiel (1)\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\ConsumerBeispiel.exe
+C:\Users\flori\Downloads\ConsumerBeispiel (1)\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\ConsumerBeispiel.xml
+C:\Users\flori\Downloads\ConsumerBeispiel (1)\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\ConsumerBeispiel.pdb
+C:\Users\flori\Downloads\ConsumerBeispielAktuell\ConsumerBeispiel\ConsumerBeispiel\bin\Debug\ConsumerBeispiel.exe.config
+C:\Users\flori\Downloads\ConsumerBeispielAktuell\ConsumerBeispiel\ConsumerBeispiel\bin\Debug\ConsumerBeispiel.exe
+C:\Users\flori\Downloads\ConsumerBeispielAktuell\ConsumerBeispiel\ConsumerBeispiel\bin\Debug\ConsumerBeispiel.pdb
+C:\Users\flori\Downloads\ConsumerBeispielAktuell\ConsumerBeispiel\ConsumerBeispiel\bin\Debug\ConsumerBeispiel.xml
+C:\Users\flori\Downloads\ConsumerBeispielAktuell\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\EnergieverbrauchDerSchule.vbprojAssemblyReference.cache
+C:\Users\flori\Downloads\ConsumerBeispielAktuell\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\MainWindow.g.vb
+C:\Users\flori\Downloads\ConsumerBeispielAktuell\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\Application.g.vb
+C:\Users\flori\Downloads\ConsumerBeispielAktuell\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\ConsumerBeispiel_MarkupCompile.cache
+C:\Users\flori\Downloads\ConsumerBeispielAktuell\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\ConsumerBeispiel_MarkupCompile.lref
+C:\Users\flori\Downloads\ConsumerBeispielAktuell\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\MainWindow.baml
+C:\Users\flori\Downloads\ConsumerBeispielAktuell\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\ConsumerBeispiel.g.resources
+C:\Users\flori\Downloads\ConsumerBeispielAktuell\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\ConsumerBeispiel.Resources.resources
+C:\Users\flori\Downloads\ConsumerBeispielAktuell\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\EnergieverbrauchDerSchule.vbproj.GenerateResource.cache
+C:\Users\flori\Downloads\ConsumerBeispielAktuell\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\EnergieverbrauchDerSchule.vbproj.CoreCompileInputs.cache
+C:\Users\flori\Downloads\ConsumerBeispielAktuell\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\ConsumerBeispiel.exe
+C:\Users\flori\Downloads\ConsumerBeispielAktuell\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\ConsumerBeispiel.xml
+C:\Users\flori\Downloads\ConsumerBeispielAktuell\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\ConsumerBeispiel.pdb
+C:\Users\flori\Downloads\ConsumerBeispielAktuell\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\view\win_deviceManager.g.vb
+C:\Users\flori\Downloads\ConsumerBeispielAktuell\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\view\win_deviceManager.baml
+C:\Users\flori\Downloads\ConsumerBeispielAktuell\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\view\win_timeAreaManager.g.vb
+C:\Users\flori\Downloads\ConsumerBeispielAktuell\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\view\win_timeAreaManager.baml
+C:\Users\flori\Downloads\ConsumerBeispielAktuell\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\view\win_add_consumer.g.vb
+C:\Users\flori\Downloads\ConsumerBeispielAktuell\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\view\win_add_consumer.baml
+C:\Users\flori\Downloads\ConsumerBeispielAktuell\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\view\win_roomManager.g.vb
+C:\Users\flori\Downloads\ConsumerBeispielAktuell\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\view\win_roomManager.baml

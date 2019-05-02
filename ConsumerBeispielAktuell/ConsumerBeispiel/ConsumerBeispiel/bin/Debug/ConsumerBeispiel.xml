@@ -1,0 +1,136 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ConsumerBeispiel
+</name>
+</assembly>
+<members>
+<member name="T:ConsumerBeispiel.My.MyWpfExtension">
+ <summary>
+ Modul zum Definieren der im My-Namespace für WPF verfügbaren Eigenschaften
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:ConsumerBeispiel.My.MyWpfExtension.Application">
+ <summary>
+ Gibt das Anwendungsobjekt für die ausgeführte Anwendung zurück.
+ </summary>
+</member>
+<member name="P:ConsumerBeispiel.My.MyWpfExtension.Computer">
+ <summary>
+ Gibt Informationen über den Hostcomputer zurück.
+ </summary>
+</member>
+<member name="P:ConsumerBeispiel.My.MyWpfExtension.User">
+ <summary>
+ Gibt Informationen über den aktuellen Benutzer zurück.  Wenn Sie die Anwendung mit den aktuellen Windows-
+ Anmeldeinformationen ausführen möchten, rufen Sie My.User.InitializeWithWindowsUser() auf.
+ </summary>
+</member>
+<member name="P:ConsumerBeispiel.My.MyWpfExtension.Log">
+ <summary>
+ Gibt das Anwendungsprotokoll zurück. Die Listener können in der Konfigurationsdatei der Anwendung konfiguriert werden.
+ </summary>
+</member>
+<member name="P:ConsumerBeispiel.My.MyWpfExtension.Windows">
+ <summary>
+ Gibt die im Projekt definierte Windows-Sammlung zurück.
+ </summary>
+</member>
+<member name="T:ConsumerBeispiel.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:ConsumerBeispiel.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:ConsumerBeispiel.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:ConsumerBeispiel.ViewModel.ViewModelBase">
+ <summary>
+ Basisklasse für alle ViewModel-Klassen, jede ViewModel-Klasse sollte von dieser Basisklasse erben.
+ Implementiert INotifyPropertyChanged, INotifyPropertyChanging, IDataErrorInfo und IValidationInfo
+ </summary>
+</member>
+<member name="M:ConsumerBeispiel.ViewModel.ViewModelBase.RaisePropertyChanged(System.String)">
+ <summary>
+ Prozedur wirft den INotifyPropertyChanged Event welcher in der WPF benötigt wird um die UI zu verständingen
+ das eine Änderung an einem Property stattgefunden hat.
+ </summary>
+ <param name="prop">Das Propertie welche sich geändert hat. Ist Optional das der Parameter "CallerMemberName" verwendet</param>
+</member>
+<member name="T:ConsumerBeispiel.win_add_consumer">
+<summary>
+win_add_consumer
+</summary>
+</member>
+<member name="M:ConsumerBeispiel.win_add_consumer.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:ConsumerBeispiel.win_deviceManager">
+<summary>
+win_deviceManager
+</summary>
+</member>
+<member name="M:ConsumerBeispiel.win_deviceManager.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:ConsumerBeispiel.win_roomManager">
+<summary>
+win_roomManager
+</summary>
+</member>
+<member name="M:ConsumerBeispiel.win_roomManager.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:ConsumerBeispiel.win_timeAreaManager">
+<summary>
+win_timeAreaManager
+</summary>
+</member>
+<member name="M:ConsumerBeispiel.win_timeAreaManager.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:ConsumerBeispiel.Application">
+<summary>
+Application
+</summary>
+</member>
+<member name="M:ConsumerBeispiel.Application.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="M:ConsumerBeispiel.Application.Main">
+<summary>
+Application Entry Point.
+</summary>
+</member>
+<member name="T:ConsumerBeispiel.MainWindow">
+<summary>
+MainWindow
+</summary>
+</member>
+<member name="M:ConsumerBeispiel.MainWindow.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+</members>
+</doc>

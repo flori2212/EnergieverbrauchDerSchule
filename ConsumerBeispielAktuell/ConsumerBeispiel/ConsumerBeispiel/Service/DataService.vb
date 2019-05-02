@@ -78,31 +78,49 @@
 
         Friend Function LoadConsumers() As List(Of Model.Consumer)
             CheckForXmlFolderPath()
-            Consumers = Serializer.LoadXML(Of List(Of Model.Consumer))(XmlFolderPath + "\consumers.xml")
+            Dim filename As String = XmlFolderPath + "\consumers.xml"
+            If Not IO.File.Exists(filename) Then Serializer.SaveXML(Of List(Of Model.Consumer))(filename, New List(Of Model.Consumer))
+
+            Consumers = Serializer.LoadXML(Of List(Of Model.Consumer))(filename)
             Return Consumers
         End Function
         Friend Function LoadDevices() As List(Of Model.Device)
             CheckForXmlFolderPath()
+            Dim filename As String = XmlFolderPath + "\devices.xml"
+            If Not IO.File.Exists(filename) Then Serializer.SaveXML(Of List(Of Model.Device))(filename, New List(Of Model.Device))
+
             Devices = Serializer.LoadXML(Of List(Of Model.Device))(XmlFolderPath + "\devices.xml")
             Return Devices
         End Function
         Friend Function LoadDeviceGroups() As List(Of Model.DeviceGroup)
             CheckForXmlFolderPath()
+            Dim filename As String = XmlFolderPath + "\deviceGroups.xml"
+            If Not IO.File.Exists(filename) Then Serializer.SaveXML(Of List(Of Model.DeviceGroup))(filename, New List(Of Model.DeviceGroup))
+
             DeviceGroups = Serializer.LoadXML(Of List(Of Model.DeviceGroup))(XmlFolderPath + "\deviceGroups.xml")
             Return DeviceGroups
         End Function
         Friend Function LoadRooms() As List(Of Model.Room)
             CheckForXmlFolderPath()
+            Dim filename As String = XmlFolderPath + "\rooms.xml"
+            If Not IO.File.Exists(filename) Then Serializer.SaveXML(Of List(Of Model.Room))(filename, New List(Of Model.Room))
+
             Rooms = Serializer.LoadXML(Of List(Of Model.Room))(XmlFolderPath + "\rooms.xml")
             Return Rooms
         End Function
         Friend Function LoadTimeAreas() As List(Of Model.TimeArea)
             CheckForXmlFolderPath()
+            Dim filename As String = XmlFolderPath + "\timeAreas.xml"
+            If Not IO.File.Exists(filename) Then Serializer.SaveXML(Of List(Of Model.TimeArea))(filename, New List(Of Model.TimeArea))
+
             TimeAreas = Serializer.LoadXML(Of List(Of Model.TimeArea))(XmlFolderPath + "\timeAreas.xml")
             Return TimeAreas
         End Function
         Friend Function LoadDataCollectors() As List(Of Model.DataCollector)
             CheckForXmlFolderPath()
+            Dim filename As String = XmlFolderPath + "\dataCollectors.xml"
+            If Not IO.File.Exists(filename) Then Serializer.SaveXML(Of List(Of Model.DataCollector))(filename, New List(Of Model.DataCollector))
+
             DataCollectors = Serializer.LoadXML(Of List(Of Model.DataCollector))(XmlFolderPath + "\dataCollectors.xml")
             Return DataCollectors
         End Function

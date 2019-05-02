@@ -7,7 +7,10 @@ Class MainWindow
     Public Sub New()
         InitializeComponent()
 
-        Service.DataService.Instance.XmlFolderPath = "C:\Users\flori\Desktop\testenergie"
+        Dim xmlFolderName As String = "Data"
+        Dim AppPath = My.Application.Info.DirectoryPath
+        Service.DataService.Instance.XmlFolderPath = $"{AppPath}\{xmlFolderName}"
+        If Not IO.Directory.Exists(Service.DataService.Instance.XmlFolderPath) Then IO.Directory.CreateDirectory(Service.DataService.Instance.XmlFolderPath)
         Service.DataService.Instance.Inistalize()
     End Sub
 

@@ -28,6 +28,11 @@
 
         End Sub
 
+        ''' <summary>
+        ''' Speichert alle Consumer welche im Property 'Consumers' vorhanden sind.
+        ''' </summary>
+        ''' <param name="consumerList">Optional kann eine List(Of Consumer) übergeben werden welche übernommen werden soll falls
+        ''' das Property Consumers im zuge der speicherung überschrieben werden soll.</param>
         Friend Sub SaveConsumers(Optional consumerList As List(Of Model.Consumer) = Nothing)
             CheckForXmlFolderPath()
             If consumerList IsNot Nothing Then Consumers = consumerList

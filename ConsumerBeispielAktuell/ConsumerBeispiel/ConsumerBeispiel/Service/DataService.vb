@@ -38,6 +38,11 @@
             If consumerList IsNot Nothing Then Consumers = consumerList
             Serializer.SaveXML(XmlFolderPath + "\consumers.xml", Consumers)
         End Sub
+
+        ''' <summary>
+        ''' Speichert akke Geräte (Testkomentar)
+        ''' </summary>
+        ''' <param name="deviceList">Optional: Liste die DeviceList überschreibt</param>
         Friend Sub SaveDevices(Optional deviceList As List(Of Model.Device) = Nothing)
             CheckForXmlFolderPath()
             If deviceList IsNot Nothing Then Devices = deviceList

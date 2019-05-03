@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ConsumerBeispiel.ViewModel.ConsumerListViewModel">
+    <Position X="11.5" Y="6.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAACgAAAwAAAAAAAAAAAAAgRAgACAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\ConsumerListViewModel.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsumerBeispiel.ViewModel.ConsumerViewModel">
+    <Position X="9.25" Y="6.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAEAAwiABABAABAABIBAAggAAAAAAKABAKQA=</HashCode>
+      <FileName>ViewModels\ConsumerViewModel.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsumerBeispiel.ViewModel.DataCollectorListViewModel">
+    <Position X="25.75" Y="6.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAACgAAAAAAAAAAAkAAAAAAAAAQACAGAAAAAAA=</HashCode>
+      <FileName>ViewModels\DataCollectorListViewModel.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsumerBeispiel.ViewModel.DataCollectorViewModel">
+    <Position X="23.5" Y="6.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAoAAAAAAAgAAAgIAAAAAAAAAAAAAAAAAAAAEABAA=</HashCode>
+      <FileName>ViewModels\DataCollectorViewModel.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsumerBeispiel.ViewModel.DeviceGroupListViewModel">
+    <Position X="21" Y="6.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACABAACgAAAAAAAEAAAAEAAAAAAAAAAAAAAgAAgEA=</HashCode>
+      <FileName>ViewModels\DeviceGroupListViewModel.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsumerBeispiel.ViewModel.DeviceGroupViewModel">
+    <Position X="18.75" Y="6.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAIAQAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\DeviceGroupViewModel.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsumerBeispiel.ViewModel.DeviceListViewModel">
+    <Position X="16.25" Y="6.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAGgAAAAAAAgCAAAAAAACAAAACAAAAAAAAAAg=</HashCode>
+      <FileName>ViewModels\DeviceListViewModel.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsumerBeispiel.ViewModel.DeviceViewModel">
+    <Position X="14" Y="6.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAggAAAAAAAIAQICAAABQAFAAAAAEAAACA=</HashCode>
+      <FileName>ViewModels\DeviceViewModel.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsumerBeispiel.ViewModel.RoomListViewModel">
+    <Position X="30.5" Y="6.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABACgAAAAAAAAAAABAAACAAAACAAQAAAAAAAEQ=</HashCode>
+      <FileName>ViewModels\RoomListViewModel.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsumerBeispiel.ViewModel.RoomViewModel">
+    <Position X="28.25" Y="6.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAoAAAAEYAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\RoomViewModel.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsumerBeispiel.ViewModel.TimeAreaListViewModel">
+    <Position X="35.25" Y="6.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>IABDAAAAigAAAAAAAAAAAAAAAAAAAAAAAAAQQAAAAAA=</HashCode>
+      <FileName>ViewModels\TimeAreaListViewModel.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsumerBeispiel.ViewModel.TimeAreaViewModel">
+    <Position X="33" Y="6.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAgAAAEAAAIIQAAQAAAAAAACAAAEAAA0A=</HashCode>
+      <FileName>ViewModels\TimeAreaViewModel.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsumerBeispiel.ViewModel.ViewModelBase">
+    <Position X="22.25" Y="2.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACACAAAAQAAAMAAAQAgAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\ViewModelBase.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ConsumerBeispiel.Service.DataService">
+    <Position X="6" Y="6.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AACAAAQAA4BACAAAIAAAAJADZAAAAABASAAiIAAASAE=</HashCode>
+      <FileName>Service\DataService.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsumerBeispiel.Service.Serializer">
+    <Position X="6" Y="13" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service\Serializer.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsumerBeispiel.Model.Consumer">
+    <Position X="9.25" Y="12.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAACAAAAgAAAAAACAAAAAAAAAAAAAAAAMAAAAAA=</HashCode>
+      <FileName>Models\Consumer.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsumerBeispiel.Model.DataCollector">
+    <Position X="23.5" Y="10" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Models\DataCollector.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsumerBeispiel.Model.Device">
+    <Position X="14" Y="11.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAggAAAAAAAAAQACAAAAAABCAAAAAAAACA=</HashCode>
+      <FileName>Models\Device.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsumerBeispiel.Model.DeviceGroup">
+    <Position X="18.75" Y="9.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Device.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsumerBeispiel.Model.Room">
+    <Position X="28.25" Y="9.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAgAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Room.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsumerBeispiel.Model.TimeArea">
+    <Position X="33" Y="11" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAgAAAAAAAAAQAAQAAAAAAACAAAAAAAUA=</HashCode>
+      <FileName>Models\TimeArea.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

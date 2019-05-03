@@ -175,6 +175,7 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+    <None Include="Service\ClassDiagram.cd" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -17,6 +17,15 @@
             End Get
         End Property
 
+        Public Property UseCount As Integer
+            Get
+                Return Service.DataService.Instance.GetRoomUseCount(Room_Model)
+            End Get
+            Set(value As Integer)
+
+            End Set
+        End Property
+
 
         Private _roomNumber As String
         Public Property RoomNumber As String

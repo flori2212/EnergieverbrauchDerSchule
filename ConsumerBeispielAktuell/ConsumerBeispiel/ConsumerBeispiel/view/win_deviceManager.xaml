@@ -25,7 +25,8 @@
             <TextBox Margin="15,0,0,0" Width="150" FontSize="14" Text="{Binding FilterText, UpdateSourceTrigger=PropertyChanged}"></TextBox>
         </StackPanel>
 
-        <DataGrid x:Name="dataGrid" Grid.Row="1" ItemsSource="{Binding AllDevicesView}" SelectedItem="{Binding SelectedDevice}" AutoGenerateColumns="False" Margin="10">
+        <DataGrid x:Name="dataGrid" Grid.Row="1" ItemsSource="{Binding AllDevicesView}" SelectedItem="{Binding SelectedDevice}" AutoGenerateColumns="False" Margin="10"
+                  IsReadOnly="True">
 
             <DataGrid.GroupStyle>
                 <GroupStyle>
@@ -61,7 +62,7 @@
 
             <DataGrid.Columns>
 
-                <DataGridTemplateColumn Header="ID">
+                <DataGridTemplateColumn Header="ID" SortMemberPath="ID">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <TextBlock Padding="7,3" Text="{Binding ID}"/>
@@ -69,7 +70,7 @@
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
 
-                <DataGridTemplateColumn Header="Name">
+                <DataGridTemplateColumn Header="Name" SortMemberPath="Name">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <TextBlock Padding="7,3" Text="{Binding Name}"/>
@@ -77,7 +78,7 @@
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
 
-                <DataGridTemplateColumn  Header="Beschreibung">
+                <DataGridTemplateColumn  Header="Beschreibung" SortMemberPath="Description">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <TextBlock Padding="7,3" Text="{Binding Description}"/>
@@ -85,7 +86,7 @@
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
 
-                <DataGridTemplateColumn   Header="Gerätegruppe">
+                <DataGridTemplateColumn   Header="Gerätegruppe" SortMemberPath="DeviceGroup.Name">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <TextBlock Padding="7,3">
@@ -95,7 +96,7 @@
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
 
-                <DataGridTemplateColumn Header="Leistung (in W)">
+                <DataGridTemplateColumn Header="Leistung (in W)" SortMemberPath="Power">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <TextBlock Padding="7,3" >
@@ -106,7 +107,16 @@
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
 
-              
+                <DataGridTemplateColumn Header="Verweise" IsReadOnly="True" SortMemberPath="UseCount">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Padding="7,3" >
+                                <Run Text="{Binding UseCount}"/>
+                            </TextBlock>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
 
             </DataGrid.Columns>
 

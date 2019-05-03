@@ -24,11 +24,7 @@
         Public Property DeviceGroupID As Integer
 
 
-        Public ReadOnly Property NameAndPower As String
-            Get
-                Return Name + " - " + Power.ToString() + " W"
-            End Get
-        End Property
+
     End Class
 
 

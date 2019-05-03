@@ -17,8 +17,15 @@ Public Class win_deviceManager
 
 
     Public Sub deleteDevice(sender As Object, e As RoutedEventArgs)
+        If DevicesLVM.SelectedDevice.UseCount <> 0 Then
+            MsgBox("Dieses Gerät kann nicht gelöscht werden." + vbCrLf + "Verbraucher haben noch einen Verweis auf es gesetzt.")
+            Exit Sub
+        End If
         DevicesLVM.AllDevices.Remove(DevicesLVM.SelectedDevice)
         DevicesLVM.SelectedDevice = DevicesLVM.AllDevices.FirstOrDefault()
+
+
+
         dataGrid.Focus()
     End Sub
 

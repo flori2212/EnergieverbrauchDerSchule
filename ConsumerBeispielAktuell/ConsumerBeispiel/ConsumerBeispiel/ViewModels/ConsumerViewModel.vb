@@ -2,11 +2,11 @@
     Public Class ConsumerViewModel
         Inherits ViewModelBase
 
-        Private ReadOnly _consumerModel As Model.Consumer
+        Public ReadOnly Property Consumer_Model As Model.Consumer
 
 
         Friend Sub New(consumerModel As Model.Consumer, aviableData As (Devices As List(Of ViewModel.DeviceViewModel), Rooms As List(Of ViewModel.RoomViewModel), DataCollectors As List(Of ViewModel.DataCollectorViewModel), TimeAreas As List(Of ViewModel.TimeAreaViewModel), DeviceGroups As List(Of Model.DeviceGroup)))
-            _consumerModel = consumerModel
+            Consumer_Model = consumerModel
             _aviableRooms = aviableData.Rooms
             _aviableDevices = aviableData.Devices
             _aviableTimeAreas = aviableData.TimeAreas
@@ -14,18 +14,18 @@
 
 
 
-            Device = AviableDevices.Where(Function(x) x.ID = _consumerModel.DeviceID).SingleOrDefault()
-            Room = AviableRooms.Where(Function(x) x.ID = _consumerModel.RoomID).SingleOrDefault()
-            DataCollector = AviableDataCollectors.Where(Function(x) x.ID = _consumerModel.DataCollectorID).SingleOrDefault()
-            TimeArea = AviableTimeAreas.Where(Function(x) x.ID = _consumerModel.TimeAreaID).SingleOrDefault()
+            Device = AviableDevices.Where(Function(x) x.ID = Consumer_Model.DeviceID).SingleOrDefault()
+            Room = AviableRooms.Where(Function(x) x.ID = Consumer_Model.RoomID).SingleOrDefault()
+            DataCollector = AviableDataCollectors.Where(Function(x) x.ID = Consumer_Model.DataCollectorID).SingleOrDefault()
+            TimeArea = AviableTimeAreas.Where(Function(x) x.ID = Consumer_Model.TimeAreaID).SingleOrDefault()
 
-            _deviceCount = _consumerModel.DeviceCount
+            _deviceCount = Consumer_Model.DeviceCount
         End Sub
 
 
         Public ReadOnly Property ID As Integer
             Get
-                Return _consumerModel.ID
+                Return Consumer_Model.ID
             End Get
         End Property
 
@@ -36,6 +36,7 @@
             End Get
             Set(value As Integer)
                 _deviceCount = value
+                Consumer_Model.DeviceCount = value
                 RaisePropertyChanged()
             End Set
         End Property
@@ -81,7 +82,7 @@
             End Get
             Set(ByVal Value As ViewModel.RoomViewModel)
                 _room = Value
-                _consumerModel.RoomID = Value.ID 'In das 'originale' Modelobjekt die ID zurückgreiben da sich der Raum ja geändert hat
+                Consumer_Model.RoomID = Value.ID 'In das 'originale' Modelobjekt die ID zurückgreiben da sich der Raum ja geändert hat
                 RaisePropertyChanged()
             End Set
         End Property
@@ -93,7 +94,7 @@
             End Get
             Set(value As ViewModel.DataCollectorViewModel)
                 _DataCollector = value
-                _consumerModel.DataCollectorID = value.ID
+                Consumer_Model.DataCollectorID = value.ID
                 RaisePropertyChanged()
             End Set
         End Property
@@ -105,7 +106,7 @@
             End Get
             Set(value As ViewModel.TimeAreaViewModel)
                 _TimeArea = value
-                _consumerModel.TimeAreaID = value.ID
+                Consumer_Model.TimeAreaID = value.ID
                 RaisePropertyChanged()
             End Set
         End Property
@@ -117,7 +118,7 @@
             End Get
             Set(value As ViewModel.DeviceViewModel)
                 _device = value
-                _consumerModel.DeviceID = value.ID
+                Consumer_Model.DeviceID = value.ID
                 RaisePropertyChanged()
             End Set
         End Property

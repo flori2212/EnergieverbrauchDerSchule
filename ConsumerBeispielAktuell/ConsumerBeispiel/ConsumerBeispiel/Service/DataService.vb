@@ -147,6 +147,27 @@
         End Sub
 
 
+        Public Function GetDeviceUseCount(device As Model.Device) As Integer
+            Dim i As Integer = 0
+            For Each c As Model.Consumer In Consumers
+                If c.DeviceID = device.ID Then
+                    i += 1
+                End If
+            Next
+            Return i
+        End Function
+
+        Public Function GetRoomUseCount(room As Model.Room) As Integer
+            Dim i As Integer = 0
+            For Each c As Model.Consumer In Consumers
+                If c.RoomID = room.ID Then
+                    i += 1
+                End If
+            Next
+            Return i
+        End Function
+
+
         ' Private Methoden und Funktionen
         Private Sub CheckForXmlFolderPath()
             If String.IsNullOrEmpty(XmlFolderPath) Then Throw New Exception("Der Pfad zu den XML Dateien muss angegeben werden!")

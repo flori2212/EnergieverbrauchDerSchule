@@ -82,11 +82,19 @@
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
 
+                <DataGridTemplateColumn  Header="Verweise" SortMemberPath="UseCount">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Padding="7,3" Text="{Binding UseCount}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
 
 
 
 
-                </DataGrid.Columns>
+
+            </DataGrid.Columns>
 
 
             </DataGrid>

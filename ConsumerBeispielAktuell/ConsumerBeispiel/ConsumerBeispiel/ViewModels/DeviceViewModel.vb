@@ -26,6 +26,16 @@ Namespace ViewModel
         End Property
 
 
+        Public Property UseCount As Integer
+            Get
+                Return Service.DataService.Instance.GetDeviceUseCount(Device_Model)
+            End Get
+            Set(value As Integer)
+
+            End Set
+        End Property
+
+
         Private _Name As String
         Public Property Name As String
             Get

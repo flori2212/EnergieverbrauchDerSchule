@@ -14,6 +14,11 @@
 
 
     Public Sub deleteRoom(sender As Object, e As RoutedEventArgs)
+        If RoomsLVM.SelectedRoom.UseCount <> 0 Then
+            MsgBox("Dieser Raum kann nicht gelöscht werden." + vbCrLf + "Verbraucher haben noch einen Verweis auf es gesetzt.")
+            Exit Sub
+        End If
+
         RoomsLVM.AllRooms.Remove(RoomsLVM.SelectedRoom)
         RoomsLVM.SelectedRoom = RoomsLVM.AllRooms.FirstOrDefault()
         dataGrid.Focus()

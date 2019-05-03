@@ -3,17 +3,17 @@
         Inherits ViewModelBase
 
 
-        Private ReadOnly _deviceGroupModel As Model.DeviceGroup
+        Public ReadOnly Property DeviceGroup_Model As Model.DeviceGroup
 
         Public Sub New(deviceGroupModel As Model.DeviceGroup)
-            _deviceGroupModel = deviceGroupModel
+            DeviceGroup_Model = deviceGroupModel
 
             Name = deviceGroupModel.Name
         End Sub
 
         Public ReadOnly Property ID As Integer
             Get
-                Return _deviceGroupModel.ID
+                Return DeviceGroup_Model.ID
             End Get
         End Property
 
@@ -25,6 +25,7 @@
             End Get
             Set(value As String)
                 _Name = value
+                DeviceGroup_Model.Name = value
                 RaisePropertyChanged()
             End Set
         End Property

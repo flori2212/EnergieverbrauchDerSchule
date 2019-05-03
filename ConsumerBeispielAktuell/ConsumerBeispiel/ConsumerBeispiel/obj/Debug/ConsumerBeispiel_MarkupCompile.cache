@@ -4,17 +4,17 @@
 winexe
 VB
 .vb
-C:\Workspace\EnerieverbrauchDerSchule\ConsumerBeispielAktuell\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\
+D:\Workspaces\EnergieverbrauchSchule\ConsumerBeispielAktuell\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\
 ConsumerBeispiel
 none
 false
 
-C:\Workspace\EnerieverbrauchDerSchule\ConsumerBeispielAktuell\ConsumerBeispiel\ConsumerBeispiel\Application.xaml
+D:\Workspaces\EnergieverbrauchSchule\ConsumerBeispielAktuell\ConsumerBeispiel\ConsumerBeispiel\Application.xaml
 5950816225
 
-29-1354544322
+30348305037
 111682248113
 MainWindow.xaml;view\win_add_consumer.xaml;view\win_deviceManager.xaml;view\win_roomManager.xaml;view\win_timeAreaManager.xaml;
 
-False
+True
 

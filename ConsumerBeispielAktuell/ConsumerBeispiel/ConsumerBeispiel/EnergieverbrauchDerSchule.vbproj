@@ -76,6 +76,7 @@
     <Compile Include="ViewModels\ConsumerViewModel.vb" />
     <Compile Include="ViewModels\DataCollectorListViewModel.vb" />
     <Compile Include="ViewModels\DataCollectorViewModel.vb" />
+    <Compile Include="ViewModels\DeviceGroupListViewModel.vb" />
     <Compile Include="ViewModels\DeviceGroupViewModel.vb" />
     <Compile Include="ViewModels\DeviceListViewModel.vb" />
     <Compile Include="ViewModels\DeviceViewModel.vb" />

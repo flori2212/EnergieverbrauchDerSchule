@@ -3,11 +3,11 @@
     Public Class DataCollectorViewModel
         Inherits ViewModelBase
 
-        Private ReadOnly _dataCollectorModel As Model.DataCollector
+        Public ReadOnly Property DataCollector_Model As Model.DataCollector
 
 
         Public Sub New(dataCollectorModel As Model.DataCollector)
-            _dataCollectorModel = dataCollectorModel
+            DataCollector_Model = dataCollectorModel
 
             Names = dataCollectorModel.Names
             Grade = dataCollectorModel.Grade
@@ -17,7 +17,7 @@
 
         Public ReadOnly Property ID As Integer
             Get
-                Return _dataCollectorModel.ID
+                Return DataCollector_Model.ID
             End Get
         End Property
 
@@ -29,6 +29,7 @@
             End Get
             Set(value As String)
                 _names = value
+                DataCollector_Model.Names = value
                 RaisePropertyChanged()
             End Set
         End Property
@@ -40,6 +41,7 @@
             End Get
             Set(value As String)
                 _grade = value
+                DataCollector_Model.Grade = value
                 RaisePropertyChanged()
             End Set
         End Property

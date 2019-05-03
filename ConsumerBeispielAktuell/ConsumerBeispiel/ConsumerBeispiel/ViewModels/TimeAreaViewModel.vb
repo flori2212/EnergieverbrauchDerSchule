@@ -3,12 +3,12 @@
     Public Class TimeAreaViewModel
         Inherits ViewModelBase
 
-        Private ReadOnly _timeAreaModel As Model.TimeArea
+        Public ReadOnly Property TimeArea_Model As Model.TimeArea
 
 
 
         Public Sub New(timeAreaModel As Model.TimeArea)
-            _timeAreaModel = timeAreaModel
+            TimeArea_Model = timeAreaModel
 
             Name = timeAreaModel.Name
             ActiveDaysPerWeek = timeAreaModel.ActiveDaysPerWeek
@@ -21,7 +21,7 @@
 
         Public ReadOnly Property ID As Integer
             Get
-                Return _timeAreaModel.ID
+                Return TimeArea_Model.ID
             End Get
         End Property
 
@@ -35,6 +35,7 @@
             End Get
             Set(value As String)
                 _Name = value
+                TimeArea_Model.Name = value
                 RaisePropertyChanged()
             End Set
         End Property
@@ -47,6 +48,7 @@
             End Get
             Set(value As Integer)
                 _activeDaysPerWeek = value
+                TimeArea_Model.ActiveDaysPerWeek = value
                 RaisePropertyChanged()
             End Set
         End Property
@@ -59,6 +61,7 @@
             End Get
             Set(value As Integer)
                 _percentOfTheYeahr = value
+                TimeArea_Model.PercentOfTheYeahr = value
                 RaisePropertyChanged()
             End Set
         End Property
@@ -71,6 +74,7 @@
             End Get
             Set(value As Boolean)
                 _activeInHolydays = value
+                TimeArea_Model.ActiveInHolydays = value
                 RaisePropertyChanged()
             End Set
         End Property
@@ -82,6 +86,7 @@
             End Get
             Set(value As Integer)
                 _timePerDayInMinutes = value
+                TimeArea_Model.TimePerDayInMinutes = value
                 RaisePropertyChanged()
             End Set
         End Property

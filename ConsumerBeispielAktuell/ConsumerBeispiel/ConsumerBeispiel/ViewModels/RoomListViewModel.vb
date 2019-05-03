@@ -19,7 +19,7 @@ Namespace ViewModel
             AllRoomsView = CollectionViewSource.GetDefaultView(AllRooms)
             AllRoomsView.Filter = AddressOf AllRoomsView_Filter
 
-            AllRoomsView.SortDescriptions.Add(New ComponentModel.SortDescription("RoomNumber", ComponentModel.ListSortDirection.Ascending))
+            AllRoomsView.SortDescriptions.Add(New SortDescription("RoomNumber", ListSortDirection.Ascending))
             AllRoomsView.GroupDescriptions.Add(New PropertyGroupDescription("Floor"))
         End Sub
 

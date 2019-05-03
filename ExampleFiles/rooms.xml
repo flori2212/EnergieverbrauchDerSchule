@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<ArrayOfRoom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Room>
+    <ID>1</ID>
+    <RoomNumber>002</RoomNumber>
+    <Floor>0</Floor>
+  </Room>
+  <Room>
+    <ID>2</ID>
+    <RoomNumber>109</RoomNumber>
+    <Floor>1</Floor>
+  </Room>
+  <Room>
+    <ID>3</ID>
+    <RoomNumber>003</RoomNumber>
+    <Floor>0</Floor>
+  </Room>
+  <Room>
+    <ID>4</ID>
+    <RoomNumber>214</RoomNumber>
+    <Floor>2</Floor>
+  </Room>
+</ArrayOfRoom>

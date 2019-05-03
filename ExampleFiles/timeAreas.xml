@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<ArrayOfTimeArea xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TimeArea>
+    <ID>1</ID>
+    <Name>Nur an Schultagen</Name>
+    <ActiveDaysPerWeek>0</ActiveDaysPerWeek>
+    <PercentOfTheYeahr>0</PercentOfTheYeahr>
+    <TimePerDayInMinutes>0</TimePerDayInMinutes>
+    <ActiveInHolydays>false</ActiveInHolydays>
+  </TimeArea>
+  <TimeArea>
+    <ID>2</ID>
+    <Name>Immer an</Name>
+    <ActiveDaysPerWeek>0</ActiveDaysPerWeek>
+    <PercentOfTheYeahr>0</PercentOfTheYeahr>
+    <TimePerDayInMinutes>0</TimePerDayInMinutes>
+    <ActiveInHolydays>false</ActiveInHolydays>
+  </TimeArea>
+</ArrayOfTimeArea>

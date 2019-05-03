@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<ArrayOfDeviceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DeviceGroup>
+    <ID>1</ID>
+    <Name>Beleuchtung</Name>
+  </DeviceGroup>
+  <DeviceGroup>
+    <ID>2</ID>
+    <Name>Technik</Name>
+  </DeviceGroup>
+</ArrayOfDeviceGroup>

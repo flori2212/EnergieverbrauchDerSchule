@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<ArrayOfDevice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Device>
+    <ID>1</ID>
+    <Name>Neonlampe (einfach)</Name>
+    <Description>keine</Description>
+    <Power>56</Power>
+    <DeviceGroupID>1</DeviceGroupID>
+  </Device>
+  <Device>
+    <ID>2</ID>
+    <Name>Neonlampe (doppelt)</Name>
+    <Description>keine</Description>
+    <Power>112</Power>
+    <DeviceGroupID>1</DeviceGroupID>
+  </Device>
+  <Device>
+    <ID>3</ID>
+    <Name>PC</Name>
+    <Description>Esprimovcv</Description>
+    <Power>230000</Power>
+    <DeviceGroupID>2</DeviceGroupID>
+  </Device>
+  <Device>
+    <ID>4</ID>
+    <Name>Beamer</Name>
+    <Description>Casio</Description>
+    <Power>240</Power>
+    <DeviceGroupID>2</DeviceGroupID>
+  </Device>
+</ArrayOfDevice>

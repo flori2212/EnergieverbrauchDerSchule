@@ -88,6 +88,9 @@
     <Compile Include="view\win_add_consumer.xaml.vb">
       <DependentUpon>win_add_consumer.xaml</DependentUpon>
     </Compile>
+    <Compile Include="view\win_dataCollectorManager.xaml.vb">
+      <DependentUpon>win_dataCollectorManager.xaml</DependentUpon>
+    </Compile>
     <Compile Include="view\win_deviceManager.xaml.vb">
       <DependentUpon>win_deviceManager.xaml</DependentUpon>
     </Compile>
@@ -110,6 +113,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="view\win_add_consumer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="view\win_dataCollectorManager.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

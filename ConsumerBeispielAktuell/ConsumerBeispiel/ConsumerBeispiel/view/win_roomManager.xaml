@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ConsumerBeispiel"
         mc:Ignorable="d"
-        Title="win_roomManager" Height="450" Width="843.5">
+        Title="Raum Manager" WindowStartupLocation="CenterScreen" Height="450" Width="843.5">
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*"/>

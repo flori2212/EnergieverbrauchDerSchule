@@ -32,6 +32,8 @@
             <MenuItem FontSize="13" Header="Manager"  Padding="7,3">
                 <MenuItem Click="deviceManager" FontSize="13" Header="Geräte Manager"/>
                 <MenuItem Click="roomManager" FontSize="13" Header="Raum Manager"/>
+                <MenuItem Click="dataCollectorManager" FontSize="13" Header="Datenherkunft Manager"/>
+                <MenuItem Click="timeAreaManager" FontSize="13" Header="Zeitbereich Manager"/>
             </MenuItem>
         </Menu>
         

@@ -10,11 +10,11 @@ none
 false
 
 C:\Users\flori\Desktop\GitHubClones\flori2212\EnergieverbrauchDerSchule\ConsumerBeispielAktuell\ConsumerBeispiel\ConsumerBeispiel\Application.xaml
-5950816225
+62013330997
 
-30-657780278
+31-609308566
 111682248113
-MainWindow.xaml;view\win_add_consumer.xaml;view\win_deviceManager.xaml;view\win_roomManager.xaml;view\win_timeAreaManager.xaml;
+MainWindow.xaml;view\win_add_consumer.xaml;view\win_dataCollectorManager.xaml;view\win_deviceManager.xaml;view\win_roomManager.xaml;view\win_timeAreaManager.xaml;
 
 False
 

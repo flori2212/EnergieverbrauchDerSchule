@@ -25,7 +25,14 @@
             End Get
         End Property
 
+        Public Property UseCount As Integer
+            Get
+                Return Service.DataService.Instance.GetTimeAreaUseCount(TimeArea_Model)
+            End Get
+            Set(value As Integer)
 
+            End Set
+        End Property
 
 
         Private _Name As String

@@ -21,6 +21,14 @@
             End Get
         End Property
 
+        Public Property UseCount As Integer
+            Get
+                Return Service.DataService.Instance.GetDataCollectorUseCount(DataCollector_Model)
+            End Get
+            Set(value As Integer)
+            End Set
+        End Property
+
 
         Private _names As String
         Public Property Names As String

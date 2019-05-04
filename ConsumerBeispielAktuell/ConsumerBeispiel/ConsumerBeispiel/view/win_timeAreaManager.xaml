@@ -5,8 +5,225 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ConsumerBeispiel"
         mc:Ignorable="d"
-        Title="TimeAreaManager" Height="450" Width="800">
+        Title="TimeAreaManager" Height="450" Width="1083.5">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="382*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Margin="10" Orientation="Horizontal">
+            <Label FontSize="14">Filter (Name):</Label>
+            <TextBox Margin="15,0,0,0" Width="150" FontSize="14" Text="{Binding FilterText, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+        </StackPanel>
+
+        <DataGrid x:Name="dataGrid" Grid.Row="1" ItemsSource="{Binding AllTimeAreasView}" SelectedItem="{Binding SelectedTimeArea}" AutoGenerateColumns="False" Margin="10">
+
+            <DataGrid.GroupStyle>
+                <GroupStyle>
+                    <GroupStyle.ContainerStyle>
+                        <Style TargetType="{x:Type GroupItem}">
+                            <Setter Property="Margin" Value="0,0,0,5"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type GroupItem}">
+                                        <Expander IsExpanded="True"
+                                             BorderThickness="1,1,1,5">
+                                            <Expander.Header>
+                                                <DockPanel>
+                                                    <TextBlock FontWeight="Bold"
+                                                          Text="{Binding Path=Name}"
+                                                          Margin="5,0,0,0"
+                                                          Width="100"/>
+                                                    <TextBlock FontWeight="Bold"
+                                                    Text="{Binding Path=ItemCount}"/>
+                                                </DockPanel>
+                                            </Expander.Header>
+                                            <Expander.Content>
+                                                <ItemsPresenter />
+                                            </Expander.Content>
+                                        </Expander>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </GroupStyle.ContainerStyle>
+                </GroupStyle>
+            </DataGrid.GroupStyle>
+
+            <DataGrid.Columns>
+
+                <DataGridTemplateColumn Header="ID" SortMemberPath="ID">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Padding="7,3" Text="{Binding ID}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="Name" SortMemberPath="Name">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Padding="7,3" Text="{Binding Name}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn  Header="Aktive Zeit pro Tag" SortMemberPath="TimePerDayInMinutes">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Padding="7,3" >
+                                <Run Text="{Binding TimePerDayInMinutes}"/>
+                                <Run Text="Minuten"/>
+                            </TextBlock>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn  Header="Aktive Tage pro Woche" SortMemberPath="ActiveDaysPerWeek">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Padding="7,3" >
+                                <Run Text="{Binding ActiveDaysPerWeek}"/>
+                            </TextBlock>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn  Header="Aktiv in den Ferien?" SortMemberPath="ActiveInHolydays">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Padding="7,3" >
+                                <Run Text="{Binding ActiveInHolydays}"/>
+                            </TextBlock>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn  Header="Prozent im Jahr" SortMemberPath="PercentOfTheYeahr">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Padding="7,3" >
+                                <Run Text="{Binding PercentOfTheYeahr}"/>
+                                <Run Text="%"/>
+                            </TextBlock>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+
+                <DataGridTemplateColumn  Header="Verweise" SortMemberPath="UseCount">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Padding="7,3" Text="{Binding UseCount}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+
+            </DataGrid.Columns>
+
+
+        </DataGrid>
+
+
+        <StackPanel Grid.Column="1" Grid.RowSpan="2" >
+            <GroupBox Header="Eigenschaften" Margin="10" HorizontalAlignment="Center" DataContext="{Binding SelectedTimeArea}">
+                <GroupBox.Resources>
+                    <Style TargetType="Label" BasedOn="{StaticResource {x:Type Label}}">
+                        <Setter Property="FontWeight" Value="Bold"/>
+                        <Setter Property="FontSize" Value="13"/>
+                    </Style>
+                    <Style TargetType="TextBlock" BasedOn="{StaticResource {x:Type TextBlock}}">
+                        <Setter Property="Margin" Value="10,0,0,0"/>
+                        <Setter Property="FontSize" Value="13"/>
+                    </Style>
+                    <Style TargetType="TextBox" BasedOn="{StaticResource {x:Type TextBox}}">
+                        <Setter Property="Margin" Value="10,0,0,0"/>
+                        <Setter Property="FontSize" Value="13"/>
+                    </Style>
+                    <Style TargetType="ComboBox" BasedOn="{StaticResource {x:Type ComboBox}}">
+                        <Setter Property="Margin" Value="10,0,0,0"/>
+                        <Setter Property="FontSize" Value="13"/>
+                    </Style>
+                    <Style TargetType="CheckBox" BasedOn="{StaticResource {x:Type CheckBox}}">
+                        <Setter Property="Margin" Value="10,0,0,0"/>
+                        <Setter Property="FontSize" Value="13"/>
+                        <Setter Property="VerticalAlignment" Value="Center"/>
+                    </Style>
+                </GroupBox.Resources>
+
+                <Grid  Margin="10,10,10,5">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="160"/>
+                        <ColumnDefinition Width="50"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="10"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="10"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+
+                        <RowDefinition Height="10"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="10"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="10"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+
+
+
+                        <RowDefinition Height="15"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+
+
+                    <Label FontSize="13" FontWeight="Bold">ID:</Label>
+                    <Label FontSize="13" FontWeight="Bold" Grid.Row="2">Name:</Label>
+                    <Label FontSize="13" FontWeight="Bold" Grid.Row="4">Aktive Zeit pro Tag:</Label>
+                    <Label FontSize="13" FontWeight="Bold" Grid.Row="6">Aktive Tage pro Woche:</Label>
+                    <Label FontSize="13" FontWeight="Bold" Grid.Row="8">Aktiv in den Ferien:</Label>
+                    <Label FontSize="13" FontWeight="Bold" Grid.Row="10">Prozent im Jahr:</Label>
+
+
+                    <Label FontSize="13" FontWeight="Bold" Grid.Row="4" Grid.Column="2">min</Label>
+                    <Label FontSize="13" FontWeight="Bold" Grid.Row="10" Grid.Column="2">%</Label>
+
+
+                    <TextBlock Text="{Binding ID}" Grid.Column="1"></TextBlock>
+                    <TextBox Text="{Binding Name}" Grid.Column="1" Grid.Row="2" Width="200" Grid.ColumnSpan="2"></TextBox>
+                    <TextBox Text="{Binding TimePerDayInMinutes}" Grid.Column="1" Grid.Row="4" Width="150"></TextBox>
+                    <TextBox Text="{Binding ActiveDaysPerWeek}" Grid.Column="1" Grid.Row="6" Width="200" Grid.ColumnSpan="2"></TextBox>
+                    <CheckBox IsChecked="{Binding ActiveInHolydays}" FontSize="13" Grid.Column="1" Grid.Row="8">Ja</CheckBox>
+                    <TextBox Text="{Binding PercentOfTheYeahr}" Grid.Column="1" Grid.Row="10" Width="150"></TextBox>
+
+
+                    <StackPanel Orientation="Horizontal" Grid.Row="12" Grid.ColumnSpan="3" HorizontalAlignment="Right">
+                        <Button Click="deleteTimeArea" FontSize="13" Padding="20,3">Löschen</Button>
+                        <Button FontSize="13" Margin="15,0,0,0" Padding="20,3">Neu</Button>
+                    </StackPanel>
+
+
+                </Grid>
+
+            </GroupBox>
+
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Bottom" Margin="10" HorizontalAlignment="Right">
+            <Button FontSize="16" Padding="20,3">Abbrechen</Button>
+            <Button Click="submit" FontSize="16" Margin="15,0,0,0" Padding="20,3">Übernehmen</Button>
+        </StackPanel>
+
     </Grid>
 </Window>

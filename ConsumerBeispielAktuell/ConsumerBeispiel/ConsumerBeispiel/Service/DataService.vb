@@ -167,6 +167,25 @@
             Return i
         End Function
 
+        Public Function GetDataCollectorUseCount(dataCollector As Model.DataCollector) As Integer
+            Dim i As Integer = 0
+            For Each c As Model.Consumer In Consumers
+                If c.DataCollectorID = dataCollector.ID Then
+                    i += 1
+                End If
+            Next
+            Return i
+        End Function
+        Public Function GetTimeAreaUseCount(timeArea As Model.TimeArea) As Integer
+            Dim i As Integer = 0
+            For Each c As Model.Consumer In Consumers
+                If c.TimeAreaID = timeArea.ID Then
+                    i += 1
+                End If
+            Next
+            Return i
+        End Function
+
 
         ' Private Methoden und Funktionen
         Private Sub CheckForXmlFolderPath()

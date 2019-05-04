@@ -90,6 +90,16 @@ win_add_consumer
 InitializeComponent
 </summary>
 </member>
+<member name="T:ConsumerBeispiel.win_dataCollectorManager">
+<summary>
+win_dataCollectorManager
+</summary>
+</member>
+<member name="M:ConsumerBeispiel.win_dataCollectorManager.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
 <member name="T:ConsumerBeispiel.win_deviceManager">
 <summary>
 win_deviceManager

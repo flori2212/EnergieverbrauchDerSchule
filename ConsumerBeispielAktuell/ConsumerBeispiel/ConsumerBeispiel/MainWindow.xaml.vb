@@ -35,6 +35,16 @@ Class MainWindow
         win.ShowDialog()
         ConsumerLVM.Reload()
     End Sub
+    Public Sub dataCollectorManager(sender As Object, e As RoutedEventArgs)
+        Dim win As New win_dataCollectorManager()
+        win.ShowDialog()
+        ConsumerLVM.Reload()
+    End Sub
+    Public Sub timeAreaManager(sender As Object, e As RoutedEventArgs)
+        Dim win As New win_timeAreaManager()
+        win.ShowDialog()
+        ConsumerLVM.Reload()
+    End Sub
 
     Public Sub openFile(sender As Object, e As RoutedEventArgs)
         Service.DataService.Instance.LoadAllData()

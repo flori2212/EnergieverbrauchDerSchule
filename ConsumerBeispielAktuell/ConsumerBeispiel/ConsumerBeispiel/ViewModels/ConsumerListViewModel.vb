@@ -78,18 +78,16 @@ Namespace ViewModel
         Private Function AllConsumersView_Filter(obj As Object) As Boolean
             If String.IsNullOrEmpty(FilterText) Then Return True
             Dim currentConsumer As ConsumerViewModel = CType(obj, ConsumerViewModel)
-            Dim roomnumberF As Boolean = currentConsumer.Room.RoomNumber.ToLower.Contains(FilterText.ToLower)
-            Dim dataCollectorF As Boolean = currentConsumer.DataCollector.NamesAndGrade.ToLower.Contains(FilterText.ToLower)
-            Dim deviceGroupF As Boolean = currentConsumer.Device.DeviceGroup.Name.ToLower.Contains(FilterText.ToLower)
-            Dim deviceF As Boolean = currentConsumer.Device.Name.ToLower.Contains(FilterText.ToLower)
 
-
-            If roomnumberF Or dataCollectorF Or deviceGroupF Or deviceF Then
-                Return True
-            Else
-                Return False
-            End If
+            Dim lowerFilterText = FilterText.ToLower()
+            With currentConsumer
+                Return .Room.RoomNumber.ToString.Contains(lowerFilterText) OrElse
+                        .DataCollector.NamesAndGrade.ToLower.Contains(lowerFilterText) OrElse
+                        .Device.DeviceGroup.Name.ToLower.Contains(lowerFilterText) OrElse
+                        .Device.Name.ToLower.Contains(lowerFilterText)
+            End With
         End Function
+
 
 
 

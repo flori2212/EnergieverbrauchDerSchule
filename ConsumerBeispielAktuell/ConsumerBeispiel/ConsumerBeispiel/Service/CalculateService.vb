@@ -18,9 +18,9 @@
 
             For Each c As Model.Consumer In DataService.Instance.Consumers
                 Dim verbrauch As Double
-                Dim device As Model.Device
-                Dim deviceGroup As Model.DeviceGroup
-                Dim timeArea As Model.TimeArea
+                Dim device As Model.Device = New Model.Device()
+                Dim deviceGroup As Model.DeviceGroup = New Model.DeviceGroup()
+                Dim timeArea As Model.TimeArea = New Model.TimeArea()
 
                 For Each d As Model.Device In DataService.Instance.Devices
                     If c.DeviceID = d.ID Then

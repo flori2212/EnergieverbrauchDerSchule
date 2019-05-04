@@ -54,19 +54,6 @@ ConsumerBeispiel
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
-<member name="M:ConsumerBeispiel.Service.DataService.SaveConsumers(System.Collections.Generic.List{ConsumerBeispiel.Model.Consumer})">
- <summary>
- Speichert alle Consumer welche im Property 'Consumers' vorhanden sind.
- </summary>
- <param name="consumerList">Optional kann eine List(Of Consumer) übergeben werden welche übernommen werden soll falls
- das Property Consumers im zuge der speicherung überschrieben werden soll.</param>
-</member>
-<member name="M:ConsumerBeispiel.Service.DataService.SaveDevices(System.Collections.Generic.List{ConsumerBeispiel.Model.Device})">
- <summary>
- Speichert akke Geräte (Testkomentar)
- </summary>
- <param name="deviceList">Optional: Liste die DeviceList überschreibt</param>
-</member>
 <member name="T:ConsumerBeispiel.ViewModel.ViewModelBase">
  <summary>
  Basisklasse für alle ViewModel-Klassen, jede ViewModel-Klasse sollte von dieser Basisklasse erben.

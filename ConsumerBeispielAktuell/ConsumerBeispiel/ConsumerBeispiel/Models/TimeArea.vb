@@ -20,6 +20,23 @@
         Public Property TimePerDayInMinutes As Integer
         Public Property ActiveInHolydays As Boolean
 
+        Public Function GetTimePerYeahrInMinutes() As Double
+            Dim time As Double
+
+            time = TimePerDayInMinutes
+            time *= ActiveDaysPerWeek
+
+            If ActiveInHolydays = True Then
+                time *= 52
+            Else
+                time *= 36
+            End If
+
+            time *= (PercentOfTheYeahr / 100)
+
+            Return time
+        End Function
+
     End Class
 
 End Namespace

@@ -46,6 +46,12 @@ Class MainWindow
         ConsumerLVM.Reload()
     End Sub
 
+
+    Public Sub calculate(sender As Object, e As RoutedEventArgs)
+        Dim win As New win_calculate()
+        win.ShowDialog()
+    End Sub
+
     Public Sub openFile(sender As Object, e As RoutedEventArgs)
         Service.DataService.Instance.LoadAllData()
 

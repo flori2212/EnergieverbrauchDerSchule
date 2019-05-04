@@ -93,3 +93,5 @@ C:\Users\flori\Desktop\GitHubClones\flori2212\EnergieverbrauchDerSchule\Consumer
 C:\Users\flori\Desktop\GitHubClones\flori2212\EnergieverbrauchDerSchule\ConsumerBeispielAktuell\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\ConsumerBeispiel.pdb
 C:\Users\flori\Desktop\GitHubClones\flori2212\EnergieverbrauchDerSchule\ConsumerBeispielAktuell\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\view\win_dataCollectorManager.g.vb
 C:\Users\flori\Desktop\GitHubClones\flori2212\EnergieverbrauchDerSchule\ConsumerBeispielAktuell\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\view\win_dataCollectorManager.baml
+C:\Users\flori\Desktop\GitHubClones\flori2212\EnergieverbrauchDerSchule\ConsumerBeispielAktuell\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\view\win_calculate.g.vb
+C:\Users\flori\Desktop\GitHubClones\flori2212\EnergieverbrauchDerSchule\ConsumerBeispielAktuell\ConsumerBeispiel\ConsumerBeispiel\obj\Debug\view\win_calculate.baml

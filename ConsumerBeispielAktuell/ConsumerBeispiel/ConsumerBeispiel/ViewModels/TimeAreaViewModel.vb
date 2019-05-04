@@ -34,6 +34,15 @@
             End Set
         End Property
 
+        Public Property TimePerYeahrHours
+            Get
+                Return TimeArea_Model.GetTimePerYeahrInMinutes() / 60
+            End Get
+            Set(value)
+
+            End Set
+        End Property
+
 
         Private _Name As String
         Public Property Name As String

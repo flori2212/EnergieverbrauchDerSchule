@@ -1,0 +1,52 @@
+﻿<Window x:Class="win_calculate"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ConsumerBeispiel"
+        mc:Ignorable="d"
+        Title="Berechnung" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Height="138.343" Width="337.575">
+    <Grid>
+
+        <Grid  Margin="15,15,15,0">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="160"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+
+
+
+
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+
+
+
+            <Label FontSize="13" FontWeight="Bold" Grid.Row="0">Preis pro kWh:</Label>
+
+
+
+            <Label FontSize="13" FontWeight="Bold" Grid.Row="0" Grid.Column="2">€</Label>
+
+         
+
+            <TextBox Text="{Binding PricePerkWh}" Grid.Column="1" Grid.Row="0" Width="150"></TextBox>
+
+
+
+            <StackPanel Orientation="Horizontal" Grid.Row="12" Grid.ColumnSpan="3" HorizontalAlignment="Center">
+                <Button FontWeight="Bold"  FontSize="13" Padding="20,3">Abbrechen</Button>
+                <Button FontWeight="Bold" Click="calculate" FontSize="13" Margin="15,0,0,0" Padding="20,3">Berechnen</Button>
+            </StackPanel>
+
+
+        </Grid>
+
+    </Grid>
+</Window>

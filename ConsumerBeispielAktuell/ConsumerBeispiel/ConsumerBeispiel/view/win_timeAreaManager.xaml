@@ -116,6 +116,16 @@
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
 
+                <DataGridTemplateColumn  Header="Zeit pro Jahr" SortMemberPath="TimePerYeahrHours">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Padding="7,3" >
+                                <Run Text="{Binding TimePerYeahrHours}"/>
+                                <Run Text="Stunden"/>
+                            </TextBlock>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
 
                 <DataGridTemplateColumn  Header="Verweise" SortMemberPath="UseCount">
                     <DataGridTemplateColumn.CellTemplate>

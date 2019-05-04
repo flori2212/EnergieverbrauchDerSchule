@@ -28,6 +28,8 @@
             <MenuItem FontSize="13" Header="Datei" Margin="10,0,0,0" Padding="7,3">
                 <MenuItem Click="openFile" FontSize="13" Header="Öffnen"/>
                 <MenuItem Click="saveFile" FontSize="13" Header="Speichern"/>
+                <Separator></Separator>
+                <MenuItem Click="calculate" FontSize="13" Header="Berechnen"/>
             </MenuItem>
             <MenuItem FontSize="13" Header="Manager"  Padding="7,3">
                 <MenuItem Click="deviceManager" FontSize="13" Header="Geräte Manager"/>

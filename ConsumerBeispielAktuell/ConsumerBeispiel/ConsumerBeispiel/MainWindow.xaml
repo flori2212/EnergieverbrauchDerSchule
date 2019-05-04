@@ -47,7 +47,7 @@
 
         <DataGrid x:Name="dataGrid" IsReadOnly="True" Grid.Column="0" ItemsSource="{Binding AllConsumersView}" SelectedItem="{Binding SelectedConsumer}" 
                   AutoGenerateColumns="False" Margin="10,0,10,10" Grid.Row="2"
-
+                  VirtualizingPanel.IsVirtualizingWhenGrouping="True"
                   >
             <DataGrid.GroupStyle>
                 <GroupStyle>

@@ -17,7 +17,7 @@ namespace CreateExampleFiles
         static void CreateConsumers()
         {
             ConsumerBeispiel.Service.DataService.Instance.XmlFolderPath = @"C:\Users\flori\Desktop\ExampleFiles";
-            ConsumerBeispiel.Service.DataService.Instance.Inistalize();
+            ConsumerBeispiel.Service.DataService.Instance.Initialize();
             for (int i = 0; i < 100; i++)
             {
                 Random r = new Random();

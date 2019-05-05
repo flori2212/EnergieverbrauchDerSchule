@@ -1,4 +1,6 @@
-﻿Namespace Service
+﻿Imports System.Linq
+
+Namespace Service
     Public Class DataService
 
         Public Property Consumers As List(Of Model.Consumer)
@@ -122,7 +124,7 @@
         End Function
 
 
-        Public Sub Inistalize()
+        Public Sub Initialize()
             Consumers = New List(Of Model.Consumer)
             Devices = New List(Of Model.Device)
             DeviceGroups = New List(Of Model.DeviceGroup)
@@ -133,48 +135,19 @@
 
 
 
-        Public Sub ConsumerExist(c As Model.Consumer)
-
-        End Sub
-
-
         Public Function GetDeviceUseCount(device As Model.Device) As Integer
-            Dim i As Integer = 0
-            For Each c As Model.Consumer In Consumers
-                If c.DeviceID = device.ID Then
-                    i += 1
-                End If
-            Next
-            Return i
+            Return Consumers.Where(Function(x) x.DeviceID = device.ID).Count()
         End Function
 
         Public Function GetRoomUseCount(room As Model.Room) As Integer
-            Dim i As Integer = 0
-            For Each c As Model.Consumer In Consumers
-                If c.RoomID = room.ID Then
-                    i += 1
-                End If
-            Next
-            Return i
+            Return Consumers.Where(Function(x) x.RoomID = room.ID).Count()
         End Function
 
         Public Function GetDataCollectorUseCount(dataCollector As Model.DataCollector) As Integer
-            Dim i As Integer = 0
-            For Each c As Model.Consumer In Consumers
-                If c.DataCollectorID = dataCollector.ID Then
-                    i += 1
-                End If
-            Next
-            Return i
+            Return Consumers.Where(Function(x) x.DataCollectorID = dataCollector.ID).Count()
         End Function
         Public Function GetTimeAreaUseCount(timeArea As Model.TimeArea) As Integer
-            Dim i As Integer = 0
-            For Each c As Model.Consumer In Consumers
-                If c.TimeAreaID = timeArea.ID Then
-                    i += 1
-                End If
-            Next
-            Return i
+            Return Consumers.Where(Function(x) x.TimeAreaID = timeArea.ID).Count()
         End Function
 
 

@@ -64,8 +64,10 @@ Class MainWindow
     End Sub
 
     Public Sub newConsumer(sender As Object, e As RoutedEventArgs)
-        Dim win As New win_add_consumer(ConsumerLVM.AllConsumers(0).AviableDevices, ConsumerLVM.AllConsumers(0).AviableRooms, ConsumerLVM.AllConsumers(0).AviableDataCollectors, ConsumerLVM.AllConsumers(0).AviableTimeAreas)
-        win.ShowDialog()
+        Dim win As New win_add_consumer()
+        If win.ShowDialog() Then
+            ConsumerLVM.Reload()
+        End If
     End Sub
 
 End Class

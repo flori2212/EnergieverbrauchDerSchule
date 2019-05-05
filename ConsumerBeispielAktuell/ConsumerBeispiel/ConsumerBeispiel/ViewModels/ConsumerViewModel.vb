@@ -13,13 +13,20 @@
             _AviableDataCollectors = aviableData.DataCollectors
 
 
+            With Consumer_Model
+                'Wenn neuer Datensatz (anscheinend weil ja ID eine Empty GUID ist
+                If .ID = Guid.Empty Then
+                    .ID = Guid.NewGuid()
+                    .RoomID = _aviableRooms.FirstOrDefault?.ID
+                End If
 
-            Device = AviableDevices.Where(Function(x) x.ID = Consumer_Model.DeviceID).SingleOrDefault()
-            Room = AviableRooms.Where(Function(x) x.ID = Consumer_Model.RoomID).SingleOrDefault()
-            DataCollector = AviableDataCollectors.Where(Function(x) x.ID = Consumer_Model.DataCollectorID).SingleOrDefault()
-            TimeArea = AviableTimeAreas.Where(Function(x) x.ID = Consumer_Model.TimeAreaID).SingleOrDefault()
+                Device = AviableDevices.Where(Function(x) x.ID = .DeviceID).SingleOrDefault()
+                Room = AviableRooms.Where(Function(x) x.ID = .RoomID).SingleOrDefault()
+                DataCollector = AviableDataCollectors.Where(Function(x) x.ID = .DataCollectorID).SingleOrDefault()
+                TimeArea = AviableTimeAreas.Where(Function(x) x.ID = .TimeAreaID).SingleOrDefault()
 
-            _deviceCount = Consumer_Model.DeviceCount
+                _deviceCount = .DeviceCount
+            End With
         End Sub
 
 
@@ -82,7 +89,7 @@
             End Get
             Set(ByVal Value As ViewModel.RoomViewModel)
                 _room = Value
-                Consumer_Model.RoomID = Value.ID    'In das 'originale' Modelobjekt die ID zurückgreiben da sich der Raum ja geändert hat
+                Consumer_Model.RoomID = Value?.ID    'In das 'originale' Modelobjekt die ID zurückgreiben da sich der Raum ja geändert hat
                 RaisePropertyChanged()
             End Set
         End Property
@@ -94,7 +101,7 @@
             End Get
             Set(value As ViewModel.DataCollectorViewModel)
                 _DataCollector = value
-                Consumer_Model.DataCollectorID = value.ID
+                Consumer_Model.DataCollectorID = value?.ID
                 RaisePropertyChanged()
             End Set
         End Property
@@ -106,7 +113,7 @@
             End Get
             Set(value As ViewModel.TimeAreaViewModel)
                 _TimeArea = value
-                Consumer_Model.TimeAreaID = value.ID
+                Consumer_Model.TimeAreaID = value?.ID
                 RaisePropertyChanged()
             End Set
         End Property

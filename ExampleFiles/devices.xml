@@ -1,31 +1,17 @@
 <?xml version="1.0"?>
 <ArrayOfDevice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Device>
-    <ID>1</ID>
-    <Name>Neonlampe (einfach)</Name>
-    <Description>keine</Description>
+    <ID>be449f65-2a3c-4d53-8bab-cc7bb58f9880</ID>
+    <Name>Neonlampe</Name>
+    <Description>-</Description>
     <Power>56</Power>
-    <DeviceGroupID>1</DeviceGroupID>
+    <DeviceGroupID>0ff2219b-62a6-48c1-9092-bd26b6032806</DeviceGroupID>
   </Device>
   <Device>
-    <ID>2</ID>
-    <Name>Neonlampe (doppelt)</Name>
-    <Description>keine</Description>
-    <Power>112</Power>
-    <DeviceGroupID>1</DeviceGroupID>
-  </Device>
-  <Device>
-    <ID>3</ID>
-    <Name>PC</Name>
-    <Description>Esprimovcv</Description>
-    <Power>230000</Power>
-    <DeviceGroupID>2</DeviceGroupID>
-  </Device>
-  <Device>
-    <ID>4</ID>
-    <Name>Beamer</Name>
-    <Description>Casio</Description>
-    <Power>240</Power>
-    <DeviceGroupID>2</DeviceGroupID>
+    <ID>690b1ca4-1cf8-4e1f-a3f2-ee5856079764</ID>
+    <Name>Lampe</Name>
+    <Description>rund</Description>
+    <Power>30</Power>
+    <DeviceGroupID>e860a447-c5ed-441f-86c5-f9776fae491b</DeviceGroupID>
   </Device>
 </ArrayOfDevice>

@@ -8,7 +8,7 @@
         Title="Verbraucher hinzufügen" Height="358" Width="517.333">
     <Grid>
         <StackPanel Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" >
-            <GroupBox Header="Eigenschaften" Margin="10" HorizontalAlignment="Center" DataContext="{Binding ConsumerVM}">
+            <GroupBox Header="Eigenschaften" Margin="10" HorizontalAlignment="Center" DataContext="{Binding}">
                 <GroupBox.Resources>
                     <Style TargetType="Label" BasedOn="{StaticResource {x:Type Label}}">
                         <Setter Property="FontWeight" Value="Bold"/>
@@ -64,15 +64,15 @@
                     <Label FontSize="13" FontWeight="Bold" Grid.Row="10">Anzahl:</Label>
 
                     <TextBlock Text="{Binding ID}" Grid.Column="1"></TextBlock>
-                    <ComboBox ItemsSource="{Binding AviableDataCollectors}" DisplayMemberPath="NamesAndGrade"  Grid.Column="1" Grid.Row="2"/>
-                    <ComboBox ItemsSource="{Binding AviableRooms}" DisplayMemberPath="RoomNumber"  Grid.Column="1" Grid.Row="4"/>
+                    <ComboBox ItemsSource="{Binding AviableDataCollectors}"  SelectedItem="{Binding DataCollector}" DisplayMemberPath="NamesAndGrade"  Grid.Column="1" Grid.Row="2"/>
+                    <ComboBox ItemsSource="{Binding AviableRooms}" SelectedItem="{Binding Room}" DisplayMemberPath="RoomNumber"  Grid.Column="1" Grid.Row="4"/>
 
-                    <ComboBox ItemsSource="{Binding AviableDevices}"  DisplayMemberPath="NameAndPower"  Grid.Column="1" Grid.Row="6">
+                    <ComboBox ItemsSource="{Binding AviableDevices}"  SelectedItem="{Binding Device}" DisplayMemberPath="NameAndPower"  Grid.Column="1" Grid.Row="6">
                     </ComboBox>
 
-                    <ComboBox ItemsSource="{Binding AviableTimeAreas}" DisplayMemberPath="Name"  Grid.Column="1" Grid.Row="8"/>
+                    <ComboBox ItemsSource="{Binding AviableTimeAreas}"  SelectedItem="{Binding TimeArea}" DisplayMemberPath="Name"  Grid.Column="1" Grid.Row="8"/>
 
-                    <TextBox x:Name="txt_count" Grid.Column="1" Grid.Row="10" Width="300"></TextBox>
+                    <TextBox x:Name="txt_count" Grid.Column="1" Grid.Row="10" Width="300" Text="{Binding DeviceCount}"></TextBox>
 
 
 
@@ -86,7 +86,7 @@
 
         <StackPanel Orientation="Horizontal" Grid.Row="12" Grid.ColumnSpan="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="10">
             <Button  FontSize="13" Padding="20,3">Löschen</Button>
-            <Button FontSize="13" Margin="15,0,0,0" Padding="20,3">Neu</Button>
+            <Button x:Name="btnCreateConsumer" FontSize="13" Margin="15,0,0,0" Padding="20,3" Click="BtnCreateConsumer_Click">Neu</Button>
         </StackPanel>
 
     </Grid>

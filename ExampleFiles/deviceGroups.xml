@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <ArrayOfDeviceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <DeviceGroup>
-    <ID>1</ID>
+    <ID>0ff2219b-62a6-48c1-9092-bd26b6032806</ID>
     <Name>Beleuchtung</Name>
   </DeviceGroup>
   <DeviceGroup>
-    <ID>2</ID>
+    <ID>e860a447-c5ed-441f-86c5-f9776fae491b</ID>
     <Name>Technik</Name>
   </DeviceGroup>
 </ArrayOfDeviceGroup>

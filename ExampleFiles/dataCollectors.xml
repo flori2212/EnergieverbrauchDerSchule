@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <ArrayOfDataCollector xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <DataCollector>
-    <ID>1</ID>
-    <Names>Florian, Simon</Names>
+    <ID>90d2ba4d-0252-4aec-af78-54a1e6228383</ID>
+    <Names>Nathan, Arhant</Names>
     <Grade>9b</Grade>
   </DataCollector>
   <DataCollector>
-    <ID>2</ID>
+    <ID>87cc2df5-6e3e-4bbf-8708-345631b85b2a</ID>
     <Names>Lukas, Finn</Names>
     <Grade>9c</Grade>
   </DataCollector>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ConsumerBeispiel;
 using ConsumerBeispiel.Model;
 
 namespace CreateExampleFiles
@@ -17,7 +18,9 @@ namespace CreateExampleFiles
 
         static void CreateConsumers()
         {
-            ConsumerBeispiel.Service.DataService.Instance.XmlFolderPath = @"C:\Users\flori\Desktop\ExampleFiles";
+            string xmlFolderName = "Data";
+            string AppPath = @"C:\Users\flori\Desktop\GitHubClones\flori2212\EnergieverbrauchDerSchule\ConsumerBeispielAktuell\ConsumerBeispiel\ConsumerBeispiel\bin\Debug";
+            ConsumerBeispiel.Service.DataService.Instance.XmlFolderPath = AppPath + "\\" + xmlFolderName;
             ConsumerBeispiel.Service.DataService.Instance.Initialize();
 
 

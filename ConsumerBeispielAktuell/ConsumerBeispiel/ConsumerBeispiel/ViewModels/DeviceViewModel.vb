@@ -11,6 +11,10 @@ Namespace ViewModel
             _aviableDeviceGroups = aviableData
             Device_Model = deviceModel
 
+            If Device_Model.ID = Guid.Empty Then
+                Device_Model.ID = Guid.NewGuid()
+            End If
+
             DeviceGroup = aviableData.Where(Function(x) x.ID = Device_Model.DeviceGroupID).FirstOrDefault()
 
             Name = deviceModel.Name

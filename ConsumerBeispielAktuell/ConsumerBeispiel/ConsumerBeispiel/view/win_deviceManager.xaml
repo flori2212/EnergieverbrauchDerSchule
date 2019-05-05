@@ -191,7 +191,7 @@
 
                     <StackPanel Orientation="Horizontal" Grid.Row="12" Grid.ColumnSpan="2" HorizontalAlignment="Right">
                         <Button Click="deleteDevice" FontSize="13" Padding="20,3">Löschen</Button>
-                        <Button FontSize="13" Margin="15,0,0,0" Padding="20,3">Neu</Button>
+                        <Button Click="newDevice" FontSize="13" Margin="15,0,0,0" Padding="20,3">Neu</Button>
                     </StackPanel>
 
 

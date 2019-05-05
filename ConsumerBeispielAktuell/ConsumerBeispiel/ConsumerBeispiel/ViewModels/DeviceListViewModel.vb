@@ -7,7 +7,11 @@ Namespace ViewModel
         Inherits ViewModel.ViewModelBase
 
         Public Sub New()
+            Reload()
+        End Sub
 
+
+        Public Sub Reload()
             Dim DevicesVM = New List(Of DeviceViewModel)
             Dim DeviceGroupsVM = New List(Of DeviceGroupViewModel)
             DataService.Instance.DeviceGroups.ForEach(Sub(x) DeviceGroupsVM.Add(New DeviceGroupViewModel(x)))
@@ -23,6 +27,7 @@ Namespace ViewModel
             AllDevicesView.SortDescriptions.Add(New ComponentModel.SortDescription("DeviceGroup.Name", ComponentModel.ListSortDirection.Ascending))
             AllDevicesView.GroupDescriptions.Add(New PropertyGroupDescription("DeviceGroup.Name"))
         End Sub
+
 
         Private _allDevices As ObservableCollection(Of DeviceViewModel)
         Public Property AllDevices As ObservableCollection(Of DeviceViewModel)

@@ -35,8 +35,14 @@
     End Sub
 
 
-    Private Sub BtnCreateConsumer_Click(sender As Object, e As RoutedEventArgs)
+    Private Sub Create(sender As Object, e As RoutedEventArgs)
         Service.DataService.Instance.Consumers.Add(ConsumerVM.Consumer_Model)
         DialogResult = True
+        Close()
+    End Sub
+
+    Public Sub Cancel()
+        DialogResult = False
+        Close()
     End Sub
 End Class

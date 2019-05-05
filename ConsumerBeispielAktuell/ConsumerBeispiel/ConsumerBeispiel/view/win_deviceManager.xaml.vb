@@ -41,6 +41,13 @@ Public Class win_deviceManager
         Close()
     End Sub
 
+    Public Sub newDevice(sender As Object, e As RoutedEventArgs)
+        Dim win As New win_add_device()
+        If win.ShowDialog() Then
+            DevicesLVM.Reload()
+        End If
+    End Sub
+
 End Class
 
 

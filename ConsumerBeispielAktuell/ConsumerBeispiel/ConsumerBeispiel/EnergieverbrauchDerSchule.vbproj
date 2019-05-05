@@ -92,6 +92,9 @@
     <Compile Include="view\win_add_consumer.xaml.vb">
       <DependentUpon>win_add_consumer.xaml</DependentUpon>
     </Compile>
+    <Compile Include="view\win_add_device.xaml.vb">
+      <DependentUpon>win_add_device.xaml</DependentUpon>
+    </Compile>
     <Compile Include="view\win_calculate.xaml.vb">
       <DependentUpon>win_calculate.xaml</DependentUpon>
     </Compile>
@@ -120,6 +123,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="view\win_add_consumer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="view\win_add_device.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

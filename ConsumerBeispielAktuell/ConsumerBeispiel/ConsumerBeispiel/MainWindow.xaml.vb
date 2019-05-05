@@ -12,7 +12,7 @@ Class MainWindow
         Service.DataService.Instance.XmlFolderPath = $"{AppPath}\{xmlFolderName}"
         If Not IO.Directory.Exists(Service.DataService.Instance.XmlFolderPath) Then IO.Directory.CreateDirectory(Service.DataService.Instance.XmlFolderPath)
         Service.DataService.Instance.XmlFolderPath = "C:\Users\flori\Desktop\ExampleFiles"
-        Service.DataService.Instance.Inistalize()
+        Service.DataService.Instance.Initialize()
     End Sub
 
 

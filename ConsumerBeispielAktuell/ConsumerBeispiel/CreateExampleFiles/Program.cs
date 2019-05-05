@@ -21,17 +21,17 @@ namespace CreateExampleFiles
             ConsumerBeispiel.Service.DataService.Instance.Initialize();
 
 
-            Guid dg1_guid = new Guid();
-            Guid dg2_guid = new Guid();
-            Guid d1_guid = new Guid();
-            Guid d2_guid = new Guid();
-            Guid dc1_guid = new Guid();
-            Guid dc2_guid = new Guid();
-            Guid r1_guid = new Guid();
-            Guid r2_guid = new Guid();
-            Guid ta1_guid = new Guid();
-            Guid ta2_guid = new Guid();
-            
+            Guid dg1_guid = Guid.NewGuid();
+            Guid dg2_guid = Guid.NewGuid();
+            Guid d1_guid = Guid.NewGuid();
+            Guid d2_guid = Guid.NewGuid();
+            Guid dc1_guid = Guid.NewGuid();
+            Guid dc2_guid = Guid.NewGuid();
+            Guid r1_guid = Guid.NewGuid();
+            Guid r2_guid = Guid.NewGuid();
+            Guid ta1_guid = Guid.NewGuid();
+            Guid ta2_guid = Guid.NewGuid();
+
 
             DeviceGroup dg1 = new DeviceGroup();
             dg1.ID = dg1_guid; dg1.Name = "Beleuchtung";
@@ -72,7 +72,7 @@ namespace CreateExampleFiles
             {
                 Random r = new Random();
                 Consumer c = new Consumer();
-                Guid c_guid = new Guid();
+                Guid c_guid = Guid.NewGuid();
                 c.ID = c_guid;
                 c.RoomID = r2_guid;
                 c.DeviceID = d1_guid;
@@ -90,7 +90,7 @@ namespace CreateExampleFiles
             {
                 Random r = new Random();
                 Consumer c = new Consumer();
-                Guid c_guid = new Guid();
+                Guid c_guid = Guid.NewGuid();
                 c.ID = c_guid;
                 c.RoomID = r2_guid;
                 c.DeviceID = d2_guid;
@@ -108,7 +108,7 @@ namespace CreateExampleFiles
             {
                 Random r = new Random();
                 Consumer c = new Consumer();
-                Guid c_guid = new Guid();
+                Guid c_guid = Guid.NewGuid();
                 c.ID = c_guid;
                 c.RoomID = r1_guid;
                 c.DeviceID = d2_guid;

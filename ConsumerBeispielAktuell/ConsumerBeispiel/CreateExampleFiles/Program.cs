@@ -22,11 +22,11 @@ namespace CreateExampleFiles
             {
                 Random r = new Random();
                 ConsumerBeispiel.Model.Consumer c = new ConsumerBeispiel.Model.Consumer();
-                c.ID = i + 1;
-                c.RoomID = r.Next(1, 5);
-                c.DeviceID = r.Next(1, 5);
-                c.TimeAreaID = r.Next(1, 3);
-                c.DataCollectorID = r.Next(1, 3);
+                c.ID = new Guid();
+                c.RoomID = new Guid("qwertzuiopasdfghjklqwertzuiop");
+                c.DeviceID = new Guid("qwertzuiopasdfghjklqwertzuiop");
+                c.TimeAreaID = new Guid("qwertzuiopasdfghjklqwertzuiop");
+                c.DataCollectorID = new Guid("qwertzuiopasdfghjklqwertzuiop");
                 c.DeviceCount = r.Next(1, 10);
                 ConsumerBeispiel.Service.DataService.Instance.Consumers.Add(c);
             }

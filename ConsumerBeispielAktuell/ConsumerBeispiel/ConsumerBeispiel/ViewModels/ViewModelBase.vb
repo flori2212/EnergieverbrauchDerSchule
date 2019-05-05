@@ -31,6 +31,8 @@ Namespace ViewModel
         End Property
 
 
+
+
 #Region "INotifyPropertyChanged"
 
         Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged

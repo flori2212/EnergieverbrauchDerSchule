@@ -19,7 +19,7 @@ Namespace ViewModel
         End Sub
 
 
-        Public ReadOnly Property ID As Integer
+        Public ReadOnly Property ID As Guid
             Get
                 Return Device_Model.ID
             End Get

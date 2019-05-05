@@ -11,7 +11,7 @@
             Name = deviceGroupModel.Name
         End Sub
 
-        Public ReadOnly Property ID As Integer
+        Public ReadOnly Property ID As Guid
             Get
                 Return DeviceGroup_Model.ID
             End Get

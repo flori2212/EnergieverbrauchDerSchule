@@ -1,7 +1,8 @@
 ﻿Namespace Model
 
     Public Class TimeArea
-        Public Property ID As Integer
+        Inherits ModelBase
+
         Public Property Name As String
 
         Private _activeDaysPerWeek

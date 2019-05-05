@@ -1,7 +1,6 @@
 ﻿Namespace Model
     Public Class Room
-
-        Public Property ID As Integer
+        Inherits ModelBase
 
         Public Property RoomNumber As String
         Public Property Floor As String

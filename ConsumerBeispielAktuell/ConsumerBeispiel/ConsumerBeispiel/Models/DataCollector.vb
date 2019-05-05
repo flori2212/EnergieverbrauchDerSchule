@@ -1,7 +1,6 @@
 ﻿Namespace Model
     Public Class DataCollector
-
-        Public Property ID As Integer
+        Inherits ModelBase
 
         Public Property Names As String
         Public Property Grade As String

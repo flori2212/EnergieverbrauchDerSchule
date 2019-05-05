@@ -1,7 +1,6 @@
 ﻿Namespace Model
     Public Class Device
-
-        Public Property ID As Integer
+        Inherits ModelBase
 
         Public Property Name As String
         Public Property Description As String
@@ -21,7 +20,7 @@
             End Set
         End Property
 
-        Public Property DeviceGroupID As Integer
+        Public Property DeviceGroupID As Guid
 
 
 
@@ -29,7 +28,7 @@
 
 
     Public Class DeviceGroup
-        Public Property ID As Integer
+        Inherits ModelBase
 
         Public Property Name As String
 

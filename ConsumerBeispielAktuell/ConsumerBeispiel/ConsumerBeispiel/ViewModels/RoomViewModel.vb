@@ -11,7 +11,7 @@
             Floor = roomModel.Floor
         End Sub
 
-        Public ReadOnly Property ID As Integer
+        Public ReadOnly Property ID As Guid
             Get
                 Return Room_Model.ID
             End Get

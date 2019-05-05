@@ -23,7 +23,7 @@
         End Sub
 
 
-        Public ReadOnly Property ID As Integer
+        Public ReadOnly Property ID As Guid
             Get
                 Return Consumer_Model.ID
             End Get
@@ -82,7 +82,7 @@
             End Get
             Set(ByVal Value As ViewModel.RoomViewModel)
                 _room = Value
-                Consumer_Model.RoomID = Value.ID 'In das 'originale' Modelobjekt die ID zurückgreiben da sich der Raum ja geändert hat
+                Consumer_Model.RoomID = Value.ID    'In das 'originale' Modelobjekt die ID zurückgreiben da sich der Raum ja geändert hat
                 RaisePropertyChanged()
             End Set
         End Property

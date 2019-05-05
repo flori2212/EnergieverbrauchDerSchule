@@ -15,7 +15,7 @@
 
 
 
-        Public ReadOnly Property ID As Integer
+        Public ReadOnly Property ID As Guid
             Get
                 Return DataCollector_Model.ID
             End Get

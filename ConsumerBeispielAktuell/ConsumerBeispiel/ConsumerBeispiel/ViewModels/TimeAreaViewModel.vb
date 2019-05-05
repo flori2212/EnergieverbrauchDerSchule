@@ -19,7 +19,7 @@
 
 
 
-        Public ReadOnly Property ID As Integer
+        Public ReadOnly Property ID As Guid
             Get
                 Return TimeArea_Model.ID
             End Get

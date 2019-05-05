@@ -5,7 +5,7 @@
         Public ReadOnly Property Consumer_Model As Model.Consumer
 
 
-        Friend Sub New(consumerModel As Model.Consumer, aviableData As (Devices As List(Of ViewModel.DeviceViewModel), Rooms As List(Of ViewModel.RoomViewModel), DataCollectors As List(Of ViewModel.DataCollectorViewModel), TimeAreas As List(Of ViewModel.TimeAreaViewModel)))
+        Friend Sub New(consumerModel As Model.Consumer, aviableData As (Devices As List(Of DeviceViewModel), Rooms As List(Of RoomViewModel), DataCollectors As List(Of DataCollectorViewModel), TimeAreas As List(Of TimeAreaViewModel)))
             Consumer_Model = consumerModel
             _aviableRooms = aviableData.Rooms
             _aviableDevices = aviableData.Devices

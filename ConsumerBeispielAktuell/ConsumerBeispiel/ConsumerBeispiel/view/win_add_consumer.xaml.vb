@@ -37,7 +37,6 @@
 
     Private Sub BtnCreateConsumer_Click(sender As Object, e As RoutedEventArgs)
         Service.DataService.Instance.Consumers.Add(ConsumerVM.Consumer_Model)
-        Service.DataService.Instance.SaveConsumers()
-        Me.DialogResult = True
+        DialogResult = True
     End Sub
 End Class

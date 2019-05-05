@@ -5,28 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ConsumerBeispiel"
         mc:Ignorable="d"
-        Title="Verbraucher hinzufügen" Height="358" Width="517.333">
+        Title="Verbraucher hinzufügen" Height="411.726" Width="517.333" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
+        <Grid.Resources>
+                <Style TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
+                    <Setter Property="FontWeight" Value="Bold"/>
+                    <Setter Property="FontSize" Value="15"/>
+                    <Setter Property="Padding" Value="15,5"/>
+                </Style>
+                <Style TargetType="Label" BasedOn="{StaticResource {x:Type Label}}">
+                    <Setter Property="FontWeight" Value="Bold"/>
+                    <Setter Property="FontSize" Value="13"/>
+                </Style>
+                <Style TargetType="TextBlock" BasedOn="{StaticResource {x:Type TextBlock}}">
+                    <Setter Property="Margin" Value="10,0,0,0"/>
+                    <Setter Property="FontSize" Value="13"/>
+                </Style>
+                <Style TargetType="TextBox" BasedOn="{StaticResource {x:Type TextBox}}">
+                    <Setter Property="Margin" Value="10,0,0,0"/>
+                    <Setter Property="FontSize" Value="13"/>
+                </Style>
+                <Style TargetType="ComboBox" BasedOn="{StaticResource {x:Type ComboBox}}">
+                    <Setter Property="Margin" Value="10,0,0,0"/>
+                    <Setter Property="FontSize" Value="13"/>
+                </Style>
+
+        </Grid.Resources>
+        
         <StackPanel Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" >
+            <Label Margin="0,10,0,0" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center">Neuen Verbraucher hinzufügen</Label>
             <GroupBox Header="Eigenschaften" Margin="10" HorizontalAlignment="Center" DataContext="{Binding}">
-                <GroupBox.Resources>
-                    <Style TargetType="Label" BasedOn="{StaticResource {x:Type Label}}">
-                        <Setter Property="FontWeight" Value="Bold"/>
-                        <Setter Property="FontSize" Value="13"/>
-                    </Style>
-                    <Style TargetType="TextBlock" BasedOn="{StaticResource {x:Type TextBlock}}">
-                        <Setter Property="Margin" Value="10,0,0,0"/>
-                        <Setter Property="FontSize" Value="13"/>
-                    </Style>
-                    <Style TargetType="TextBox" BasedOn="{StaticResource {x:Type TextBox}}">
-                        <Setter Property="Margin" Value="10,0,0,0"/>
-                        <Setter Property="FontSize" Value="13"/>
-                    </Style>
-                    <Style TargetType="ComboBox" BasedOn="{StaticResource {x:Type ComboBox}}">
-                        <Setter Property="Margin" Value="10,0,0,0"/>
-                        <Setter Property="FontSize" Value="13"/>
-                    </Style>
-                </GroupBox.Resources>
+
 
                 <Grid  Margin="10,10,10,5">
 
@@ -85,8 +94,8 @@
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" Grid.Row="12" Grid.ColumnSpan="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="10">
-            <Button  FontSize="13" Padding="20,3">Löschen</Button>
-            <Button x:Name="btnCreateConsumer" FontSize="13" Margin="15,0,0,0" Padding="20,3" Click="BtnCreateConsumer_Click">Neu</Button>
+            <Button>Abbrechen</Button>
+            <Button x:Name="btnCreateConsumer"  Margin="15,0,0,0" Click="BtnCreateConsumer_Click">Neu</Button>
         </StackPanel>
 
     </Grid>

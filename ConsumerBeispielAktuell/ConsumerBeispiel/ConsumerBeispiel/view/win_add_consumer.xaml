@@ -8,7 +8,7 @@
         Title="Verbraucher hinzufügen" Height="358" Width="517.333">
     <Grid>
         <StackPanel Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" >
-            <GroupBox Header="Eigenschaften" Margin="10" HorizontalAlignment="Center" DataContext="{Binding SelectedConsumer}">
+            <GroupBox Header="Eigenschaften" Margin="10" HorizontalAlignment="Center" DataContext="{Binding ConsumerVM}">
                 <GroupBox.Resources>
                     <Style TargetType="Label" BasedOn="{StaticResource {x:Type Label}}">
                         <Setter Property="FontWeight" Value="Bold"/>

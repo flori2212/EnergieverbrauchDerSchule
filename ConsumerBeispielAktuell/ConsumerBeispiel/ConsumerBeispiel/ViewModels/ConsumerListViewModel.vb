@@ -27,7 +27,7 @@ Namespace ViewModel
             DataService.Instance.DataCollectors.ForEach(Sub(x) DataCollectorsVM.Add(New DataCollectorViewModel(x)))
 
             Dim ConsumersVM = New List(Of ConsumerViewModel)
-            DataService.Instance.Consumers.ForEach(Sub(x) ConsumersVM.Add(New ConsumerViewModel(x, (DevicesVM, RoomsVM, DataCollectorsVM, TimeAreasVM, DataService.Instance.DeviceGroups))))
+            DataService.Instance.Consumers.ForEach(Sub(x) ConsumersVM.Add(New ConsumerViewModel(x, (DevicesVM, RoomsVM, DataCollectorsVM, TimeAreasVM))))
 
             AllConsumers = New ObservableCollection(Of ConsumerViewModel)
             ConsumersVM.ForEach(Sub(x) AllConsumers.Add(x))

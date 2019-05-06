@@ -7,7 +7,7 @@
         xmlns:viewmodel="clr-namespace:ConsumerBeispiel.ViewModel"
         xmlns:componentModel="clr-namespace:System.ComponentModel;assembly=WindowsBase"
         mc:Ignorable="d"
-        Title="Energieverbrauch der Schule" Height="450" Width="1187.5" x:Name="win_window">
+        Title="Energieverbrauch der Schule" Height="450" Width="1215.248" x:Name="win_window">
 
 
     <Grid>
@@ -83,7 +83,7 @@
 
             <DataGrid.Columns>
 
-                <DataGridTemplateColumn CanUserSort="True" SortMemberPath="ID" Header="ID">
+                <DataGridTemplateColumn CanUserSort="True" SortMemberPath="ID" Header="ID" Visibility="Hidden">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <TextBlock Padding="7,3" Text="{Binding ID}"/>
@@ -158,6 +158,17 @@
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <TextBlock Padding="7,3" Text="{Binding TimeArea.Name}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn CanUserSort="True" SortMemberPath="KwhPerYeahr" Header="Verbrauch pro Jahr (in kWh)">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Padding="7,3" >
+                                <Run Text="{Binding KwhPerYeahr}"/>
+                                <Run Text="kWh/a"/>
+                            </TextBlock>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>

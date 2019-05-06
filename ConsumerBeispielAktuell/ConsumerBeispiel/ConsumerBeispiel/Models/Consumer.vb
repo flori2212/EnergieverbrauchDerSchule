@@ -11,5 +11,7 @@
 
         Public Property DeviceCount As Integer
 
+
+
     End Class
 End Namespace

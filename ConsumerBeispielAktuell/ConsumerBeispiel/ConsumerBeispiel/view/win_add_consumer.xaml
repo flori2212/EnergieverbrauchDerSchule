@@ -34,7 +34,7 @@
         
         <StackPanel Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" >
             <Label Margin="0,10,0,0" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center">Neuen Verbraucher hinzufügen</Label>
-            <GroupBox Header="Eigenschaften" Margin="10" HorizontalAlignment="Center" DataContext="{Binding Con}">
+            <GroupBox Header="Eigenschaften" Margin="10" HorizontalAlignment="Center" DataContext="{Binding}">
 
 
                 <Grid  Margin="10,10,10,5">

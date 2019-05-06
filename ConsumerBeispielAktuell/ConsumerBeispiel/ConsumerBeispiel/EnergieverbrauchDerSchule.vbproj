@@ -84,12 +84,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Models\CalculateResult.vb" />
     <Compile Include="Models\ModelBase.vb" />
     <Compile Include="Service\CalculateService.vb" />
     <Compile Include="Service\DataService.vb" />
     <Compile Include="Models\DataCollector.vb" />
     <Compile Include="Models\TimeArea.vb" />
     <Compile Include="Service\Serializer.vb" />
+    <Compile Include="ViewModels\CalculateResultViewModel.vb" />
     <Compile Include="ViewModels\CalculateViewModel.vb" />
     <Compile Include="ViewModels\ConsumerListViewModel.vb" />
     <Compile Include="ViewModels\ConsumerViewModel.vb" />
@@ -112,6 +114,9 @@
     </Compile>
     <Compile Include="view\win_calculate.xaml.vb">
       <DependentUpon>win_calculate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="view\win_calculate_result.xaml.vb">
+      <DependentUpon>win_calculate_result.xaml</DependentUpon>
     </Compile>
     <Compile Include="view\win_dataCollectorManager.xaml.vb">
       <DependentUpon>win_dataCollectorManager.xaml</DependentUpon>
@@ -146,6 +151,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="view\win_calculate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="view\win_calculate_result.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

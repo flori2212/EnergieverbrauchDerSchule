@@ -48,6 +48,14 @@
             End Set
         End Property
 
+        Public Property KwhPerYeahr As Double
+            Get
+                Return (Device.Power * DeviceCount * TimeArea.TimePerYeahrHours()) / 1000
+            End Get
+            Set(value As Double)
+
+            End Set
+        End Property
 
 
 
